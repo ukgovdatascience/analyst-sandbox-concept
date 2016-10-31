@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  GOV.UK prototype kit
+  Analyst sandbox concept
 {% endblock %}
 
 {% block content %}
@@ -16,7 +16,45 @@
         This app demonstrates the concept of an analyst sandbox
       </p>
 
-      <h2 class="heading-medium">About this page</h2>
+      {% block content %}
+<main id="content" role="main">
+
+  <form action="/" method="post" class="form">
+
+    <h1 class="form-title heading-large">
+      Login
+    </h1>
+
+    <!-- Username -->
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">Username</label>
+      <p class="form-hint">Your email address</p>
+      <input type="text" class="form-control" id="full-name">
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label class="form-label-bold" for="ni-number">
+        Password
+        <span class="form-hint">
+          This has been emailed to you
+        </span>
+      </label>
+      <input type="text" class="form-control" id="ni-number">
+    </div>
+
+   <div>
+   <p>
+        <a class="button button-start" href="#" role="button">Start now</a>
+      </p>
+      </div>
+
+  </form>
+
+</main>
+{% endblock %}
+
+<h2 class="heading-medium">About this page</h2>
 
       <p>{You'll find this page in the kit at '/app/views/index.html'.</p>
               <p>You can change the service name by editing the file '/app/config.js'.}</p>
