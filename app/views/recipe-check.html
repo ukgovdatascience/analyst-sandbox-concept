@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  {% include "includes/breadcrumb_examples.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">
+          Recipe check
+        </h1>
+
+        <p>
+          This page helps you check the tool you've chosen, and suggests other packages you might need, before your sandbox is built
+        </p>
+
+        <h2 class="heading-large">
+          You asked for these tools</h2>
+        <ul>
+        <li>R</li>
+        <li>MongoDB</li>
+        <li>Shiny</li>
+        </ul>
+
+        <p>
+         <h2 class="heading-large">
+          Do you also want to install</h2>
+          <ul>
+        <li>RStudio?</li>
+        </ul>
+        <div>
+          <form action="/" method="post" class="form">
+            <div class="form-group">
+            <fieldset>
+
+              <legend class="visuallyhidden">
+              Do you also want to install
+              </legend>
+
+              <label for="Yes" class="block-label">
+              <input id="radio-part-2" type="radio" name="also" value="Yes">
+              <span class="heading-small">Yes</span>
+              </label>
+
+              <label for="No" class="block-label">
+              <input id="radio-part-3" type="radio" name="also" value="No
+              ">
+              <span class="heading-small">No</span>
+              </label>
+
+            </fieldset>
+            </div>
+        </form>
+        </div>
+        </p>
+      
+        
+        
+  </div>
+</main>
+{% endblock %}
