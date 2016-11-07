@@ -7,22 +7,100 @@
 {% block content %}
 <main id="content" role="main">
 
-  {% include "includes/breadcrumb_examples.html" %}
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://analyst-sandbox-prototype.herokuapp.com/">Analyst sandbox prototype</a></li>
+      <li><a href="https://analyst-sandbox-prototype.herokuapp.com/sandbox-start-page">Start</a></li>
+      <li>Data</li>
+    </ol>
+  </div>
 
   <div class="grid-row">
     <div class="column-two-thirds">
 
+      <form action="/" method="post" class="form">
+
         <h1 class="heading-xlarge">
-          Under 18
+          <span class="heading-secondary">Step 3 of 6</span>
+            About your data
         </h1>
 
         <p>
-          Congratulations, you are under 18.
+          This page helps you define the sort of data science tools you need. Start by telling the app what kind of data you want to work with, and what sort of analysis you plan to do.
         </p>
 
-        <p>
-          <a href="/examples/branching">Back to the branching example</a>
-        </p>
+        <h2 class="heading-large">
+          What sort of data are you working with?
+        </h2>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">What sort of data are you working with?</legend>
+
+            <label for="nationality_british" class="block-label">
+              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+              Semi-structured
+            </label>
+
+            <label for="nationality_irish" class="block-label">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Unstructured
+            </label>
+
+            <label for="nationality_other" class="block-label" data-target="example_nationality_other">
+              <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other">
+              Other
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other">
+              <label for="nationality_other_countries" class="form-label">
+                Please specify
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+            </div>
+
+          </fieldset>
+        </div>
+
+        <h2 class="heading-large">
+          What sort of analysis do you want to try?
+        </h2>
+
+         <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">What sort of analysis do you want to try?</legend>
+
+            <label for="nationality_british" class="block-label">
+              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+              Data visualisation
+            </label>
+
+            <label for="nationality_irish" class="block-label">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Topic modelling
+            </label>
+
+            <label for="nationality_other" class="block-label" data-target="example_nationality_other">
+              <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other">
+              Other
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other">
+              <label for="nationality_other_countries" class="form-label">
+                Please specify
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+            </div>
+
+          </fieldset>
+        </div>
+
+      </form>
+      <p>
+           <a class="button button-start" href="https://analyst-sandbox-prototype.herokuapp.com/choose-tools.html" role="button">Choose your tools</a>
+      </p>
 
     </div>
   </div>

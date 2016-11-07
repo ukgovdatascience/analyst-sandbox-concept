@@ -28,7 +28,7 @@ router.get('/adv-user', function (req, res) {
   if (advuser == "false"){
 
     // redirect to the relevant page
-    res.redirect("/adv-user");
+    res.redirect("/choose-tools");
 
   } else {
 
