@@ -23,17 +23,17 @@ router.get('/examples/template-data', function (req, res) {
 router.get('/views/adv-user', function (req, res) {
 
   // get the answer from the query string (eg. ?over18=false)
-  var adv-user = req.query.adv-user;
+  var advuser = req.query.advuser;
 
-  if (adv-user == "false"){
+  if (advuser == "false"){
 
     // redirect to the relevant page
-    res.redirect("/views/beginner");
+    res.redirect("/views/adv-user");
 
   } else {
 
     // if over18 is any other value (or is missing) render the page requested
-    res.render('views/adv-user');
+    res.render('views/beginner');
 
   }
 
