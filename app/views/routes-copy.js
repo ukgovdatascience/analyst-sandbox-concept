@@ -28,12 +28,12 @@ router.get('/views/adv-user', function (req, res) {
   if (advuser == "false"){
 
     // redirect to the relevant page
-    res.redirect("/views/adv-user");
+    res.redirect("/adv-user");
 
   } else {
 
     // if over18 is any other value (or is missing) render the page requested
-    res.render('views/beginner');
+    res.render('beginner');
 
   }
 
