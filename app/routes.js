@@ -28,12 +28,12 @@ router.get('/adv-user', function (req, res) {
   if (advuser == "false"){
 
     // redirect to the relevant page
-    res.redirect("/choose-tools");
+    res.redirect("/build-sandbox");
 
   } else {
 
     // if over18 is any other value (or is missing) render the page requested
-    res.render('/beginner');
+    res.render('/choose-tools');
 
   }
 
