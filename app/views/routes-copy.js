@@ -20,7 +20,7 @@ router.get('/examples/template-data', function (req, res) {
 
 // Branching
 
-router.get('/views/adv-user', function (req, res) {
+router.get('/adv-user', function (req, res) {
 
   // get the answer from the query string (eg. ?over18=false)
   var advuser = req.query.advuser;
@@ -33,7 +33,7 @@ router.get('/views/adv-user', function (req, res) {
   } else {
 
     // if over18 is any other value (or is missing) render the page requested
-    res.render('beginner');
+    res.render('/beginner');
 
   }
 
