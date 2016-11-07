@@ -1,0 +1,62 @@
+forn{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Branching
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://analyst-sandbox-prototype.herokuapp.com/">Analyst sandbox prototype</a></li>
+      <li>AdvBegin</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Step 2 of 6</span>
+          Welcome to the analyst sandbox
+      </h1>
+
+      <form action="/views/adv-user" method="get" class="form">
+
+      <p>If you are a beginner, click 'no' to get help with choosing tools for your sandbox</p>
+      <p>If you are an advanced user, click 'yes to choose tools yourself</p>
+
+
+        <h2 class="heading-medium">
+          Are you an advanced user?
+        </h2>
+
+        <div class="form-group">
+          <fieldset class="inline">
+
+            <legend class="visuallyhidden">Are you an advanced user?</legend>
+
+            <label for="advUserTrue" class="block-label">
+              <input type="radio" name="adv-user" value="true" id="advUserTrue">
+              Yes
+            </label>
+
+            <label for="advUserFalse" class="block-label">
+              <input type="radio" name="adv-user" value="false" id="advUserFalse">
+              No
+            </label>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}
