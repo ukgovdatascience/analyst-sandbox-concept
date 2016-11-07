@@ -40,22 +40,56 @@
 
             <label for="nationality_british" class="block-label">
               <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
-              Category 1
+              Semi-structured
             </label>
 
             <label for="nationality_irish" class="block-label">
               <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
-              Category 2
+              Unstructured
             </label>
 
             <label for="nationality_other" class="block-label" data-target="example_nationality_other">
               <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other">
-              Category 3
+              Other
             </label>
 
             <div class="panel panel-border-narrow js-hidden" id="example_nationality_other">
               <label for="nationality_other_countries" class="form-label">
-                Country name
+                Please specify
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+            </div>
+
+          </fieldset>
+        </div>
+
+        <h2 class="heading-large">
+          What sort of analysis do you want to try?
+        </h2>
+
+         <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">What sort of analysis do you want to try?</legend>
+
+            <label for="nationality_british" class="block-label">
+              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+              Data visualisation
+            </label>
+
+            <label for="nationality_irish" class="block-label">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Topic modelling
+            </label>
+
+            <label for="nationality_other" class="block-label" data-target="example_nationality_other">
+              <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other">
+              Other
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other">
+              <label for="nationality_other_countries" class="form-label">
+                Please specify
               </label>
               <input class="form-control" type="text" id="nationality_other_countries">
             </div>
