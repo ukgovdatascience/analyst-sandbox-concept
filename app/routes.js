@@ -33,7 +33,7 @@ router.get('/adv-user', function (req, res) {
   } else {
 
     // if over18 is any other value (or is missing) render the page requested
-    res.render('/choose-tools');
+    res.render('choose-tools');
 
   }
 
