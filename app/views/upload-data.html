@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  About your data
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://analyst-sandbox-prototype.herokuapp.com/">Analyst sandbox prototype</a></li>
+      <li><a href="https://analyst-sandbox-prototype.herokuapp.com/sandbox-start-page">Start</a></li>
+      <li>Data</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h1 class="heading-xlarge">
+          <span class="heading-secondary">Step 6 of 7</span>
+            Upload data
+        </h1>
+
+        <p>
+          This page helps you add data to your sandbox environment
+        </p>
+
+        <h2 class="heading-large">
+          How do you want to upload data?
+        </h2>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">How do you want to upload data?</legend>
+
+            <label for="nationality_british" class="block-label">
+              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+              Read a CSV file
+            </label>
+
+            <label for="nationality_british" class="block-label">
+              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+              Write to a database
+            </label>
+
+            <label for="nationality_irish" class="block-label">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Upload open data
+            </label>
+
+            <label for="nationality_irish" class="block-label">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Create synthetic data
+            </label>
+
+            <label for="nationality_other" class="block-label" data-target="example_nationality_other">
+              <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other">
+              Other
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other">
+              <label for="nationality_other_countries" class="form-label">
+                Please specify
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+            </div>
+
+          </fieldset>
+        </div>
+
+        <h2 class="heading-large">
+          Please read and accept the data agreement
+        </h2>
+
+          </fieldset>
+        </div>
+
+      </form>
+      <p>
+           <a class="button button-start" href="https://analyst-sandbox-prototype.herokuapp.com/building-progress.html" role="button">Build my sandbox</a>
+      </p>
+
+    </div>
+  </div>
+</main>
+{% endblock %}
