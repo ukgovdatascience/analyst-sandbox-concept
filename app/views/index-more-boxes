@@ -1,59 +1,6 @@
-{% extends "layout.html" %}
+index-more-boxes
 
-{% block page_title %}
-  Analyst sandbox concept
-{% endblock %}
-
-{% block content %}
-
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-two-thirds">
-
-    <section class="intro">
-
-    <h1 class="heading-xlarge">
-        <span class="heading-secondary">Step 1 of 7</span>
-          Analyst sandbox concept
-      </h1>
-
-      <p>Government analysis is changing, with data science tools and techniques playing a bigger role.</p>
-      <p>This app demonstrates the concept of a sandbox that helps analysts adapt to that change. Users can test a variety of analytical software using their government issued devices, learn about their capabilities and build a business case for their use</p>
-      </p>
-
-      <form action="/" method="post" class="form">
-
-        <h1 class="form-title heading-large">
-          Login
-        </h1>
-
-        <!-- Username -->
-          <div class="form-group">
-            <label class="form-label-bold" for="full-name">Username</label>
-              <span class="form-hint">Your email address</span>
-              <input type="text" class="form-control" id="Username">
-          </div>
-
-        <!-- Password -->
-          <div class="form-group">
-            <label class="form-label-bold" for="ni-number">
-          Password
-        <span class="form-hint">
-          This has been emailed to you
-        </span>
-      </label>
-      <input type="text" class="form-control" id="Password">
-    </div>
-
-      <div>
-        <p><a class="button button-start" href="https://analyst-sandbox-prototype.herokuapp.com/adv-branch" role="button">Login</a></p>
-      </div>
-
-      </form>
-
-      </section>
-
-   <h1 class="form-title heading-large">
+<h1 class="form-title heading-large">
           Before you start
         </h1>
 
@@ -111,8 +58,8 @@
 </ul>
 
 <div role="note" aria-label="Information" class="application-notice info-notice">
-  <p>If you have any questions regarding ethics, data sharing/protection or openly sharing your work please <a href="mailto:analyst.sandbox@digitalcabinet-office.gov.uk">Contact Us</a>
-  </p>
+	<p>If you have any questions regarding ethics, data sharing/protection or openly sharing your work please <a href="mailto:analyst.sandbox@digitalcabinet-office.gov.uk">Contact Us</a>
+	</p>
 </div>
 
 
@@ -122,11 +69,3 @@
 </div>
 
   </section>
-
-    </div>
-  </div>
-</main>
-
-{% endblock %}
-
-
