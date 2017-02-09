@@ -23,7 +23,7 @@ router.get('/examples/template-data', function (req, res) {
 router.get('/adv-branch', function (req, res) {
 
   // get the answer from the query string (eg. ?over18=false)
-  var adv-user = req.query.advuser;
+  var adv-user = req.query.adv-user;
 
   if (adv-user == "false"){
 
