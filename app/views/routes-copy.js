@@ -20,12 +20,12 @@ router.get('/examples/template-data', function (req, res) {
 
 // Branching
 
-router.get('/adv-branch', function (req, res) {
+router.get('/existing-sandboxes', function (req, res) {
 
   // get the answer from the query string (eg. ?over18=false)
-  var adv-user = req.query.adv-user;
+  var advuser = req.query.advuser;
 
-  if (adv-user == "false"){
+  if (advuser == "radio-part-2"){
 
     // redirect to the relevant page
     res.redirect("/choose-tools");
