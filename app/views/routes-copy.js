@@ -25,7 +25,7 @@ router.get('/existing-sandboxes', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
   var advuser = req.query.advuser;
 
-  if (advuser == "radio-part-2"){
+  if (advuser == "Part 2"){
 
     // redirect to the relevant page
     res.redirect("/choose-tools");
