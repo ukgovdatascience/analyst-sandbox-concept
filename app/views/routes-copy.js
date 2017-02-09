@@ -23,9 +23,9 @@ router.get('/examples/template-data', function (req, res) {
 router.get('/adv-branch', function (req, res) {
 
   // get the answer from the query string (eg. ?over18=false)
-  var advuser = req.query.advuser;
+  var adv-user = req.query.advuser;
 
-  if (advuser == "false"){
+  if (adv-user == "false"){
 
     // redirect to the relevant page
     res.redirect("/choose-tools");
