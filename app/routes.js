@@ -20,7 +20,7 @@ router.get('/examples/template-data', function (req, res) {
 
 // Branching
 
-router.get('/adv-user', function (req, res) {
+router.get('/existing-sandboxes', function (req, res) {
 
   // get the answer from the query string (eg. ?over18=false)
   var advuser = req.query.advuser;
