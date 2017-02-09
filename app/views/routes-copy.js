@@ -20,7 +20,7 @@ router.get('/examples/template-data', function (req, res) {
 
 // Branching
 
-router.get('/adv-user', function (req, res) {
+router.get('/adv-branch', function (req, res) {
 
   // get the answer from the query string (eg. ?over18=false)
   var advuser = req.query.advuser;
@@ -40,5 +40,28 @@ router.get('/adv-user', function (req, res) {
 });
 
 // add your routes here
+
+// Branching
+
+router.get('/Welcome', function (req, res) {
+
+  // get the answer from the query string (eg. ?over18=false)
+  var existing = req.query.advuser;
+
+  if (existing == "false"){
+
+    // redirect to the relevant page
+    res.redirect("/adv-branch");
+
+  } else {
+
+    // if over18 is any other value (or is missing) render the page requested
+    res.render('/existing-sandboxes');
+
+  }
+
+});
+
+
 
 module.exports = router;
