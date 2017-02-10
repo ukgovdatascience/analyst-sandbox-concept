@@ -1,0 +1,412 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"n",
+				"new"
+			],
+			[
+				"user",
+				"Username"
+			],
+			[
+				"form",
+				"form-label-bold"
+			],
+			[
+				"total",
+				"total-cost-heading"
+			],
+			[
+				"trans",
+				"transactions-per-year-heading"
+			],
+			[
+				"sa",
+				"Sandboxes"
+			],
+			[
+				"adv",
+				"adv-user"
+			],
+			[
+				"ad",
+				"adv-user"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"pro",
+				"prototype"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "docs/documentation_routes.js",
+			"settings":
+			{
+				"buffer_size": 2021,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 6372,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/welcome-test.html",
+			"settings":
+			{
+				"buffer_size": 1488,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{% extends \"layout.html\" %}\n\n{% block page_title %}\n  Sandbox welcome\n{% endblock %}\n\n{% block content %}\n<main id=\"content\" role=\"main\">\n\n  <div class=\"breadcrumbs\">\n    <ol>\n      <li><a href=\"https://analyst-sandbox-prototype.herokuapp.com/\">Analyst sandbox prototype</a></li>\n      <li>Begin</li>\n    </ol>\n  </div>\n\n  <div class=\"grid-row\">\n    <div class=\"column-two-thirds\">\n\n      <h1 class=\"heading-xlarge\">\n        <span class=\"heading-secondary\">Step 2 of 7</span>\n          Welcome to the analyst sandbox\n      </h1>\n\n      <form action=\"adv-user\" method=\"get\" class=\"form\">\n\n\n        <h2 class=\"heading-medium\">\n          What would you like to do today?\n        </h2>\n        <p>Select one of the options below</p>\n\n        <div class=\"form-group\">\n          <fieldset>\n\n            <legend class=\"visuallyhidden\">\n              What would you like to do today?\n            </legend>\n\n            <label for=\"radio-part-2\" class=\"block-label selection-button-radio selected\">\n              <input id=\"radio-part-2\" type=\"radio\" name=\"\" value=\"Part 2\">\n              <span class=\"heading-small\">I want to work in my existing sandbox</span><br>\n              Go to your sandbox homepage\n            </label>\n\n            <label for=\"radio-part-3\" class=\"block-label selection-button-radio\">\n              <input id=\"radio-part-3\" type=\"radio\" name=\"adv-user\" value=\"Part 3\">\n              <span class=\"heading-small\">I want to create a new sandbox</span><br>\n              Configure your new sandbox\n            </label>\n\n          </fieldset>\n        </div>\n\n        <div class=\"form-group\">\n          <input type=\"submit\" class=\"button\" value=\"Continue\">\n        </div>\n\n      </form>\n\n    </div>\n  </div>\n</main>\n{% endblock %}\n",
+			"file": "app/views/Welcome.html",
+			"file_size": 1751,
+			"file_write_time": 131311982520000000,
+			"settings":
+			{
+				"buffer_size": 1743,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/routes.js",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/upload-data.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/recipe-check.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/choose-tools.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/build-sandbox.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/routes.js",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/adv-branch.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/welcome-test.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/Welcome.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/index.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/routes-copy.js",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/existing-sandboxes.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/adv-user.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/index-more-boxes",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/here-is-your-sandbox.html",
+		"/Users/prateekbuch/Documents/tomatosoup/recipe_PB.txt",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/dashboard sections.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/examples/elements/grid-layout.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/examples/template-data.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/assets/sass/examples.scss",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/assets/sass/patterns/check-your-answers.scss",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/building-progress.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/examples/branching.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/beginner.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/sandbox-start-page.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/sandbox-complete.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/examples/over-18.html",
+		"/Users/prateekbuch/Downloads/WeatherHistory.csv",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/examples/confirmation-page.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/examples/elements/radio-buttons-checkboxes.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/examples/elements/forms.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/examples/start-page.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/config.js",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/layout.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/includes/head.html",
+		"/Users/prateekbuch/Projects/analyst_sandbox_prototype/app/views/examples/blank-govuk.html",
+		"/Users/prateekbuch/Documents/Test/TestFile.txt"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"adv",
+			"advus",
+			"adv",
+			"advus",
+			"strong",
+			"/views"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "docs/documentation_routes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2021,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 477.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/welcome-test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/Welcome.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1743,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1048,
+								1048
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 387.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sandbox.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/analyst_sandbox_prototype/app/views/choose-tools.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
