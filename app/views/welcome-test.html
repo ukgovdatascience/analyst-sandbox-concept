@@ -22,27 +22,23 @@
           Welcome to the analyst sandbox
       </h1>
 
-      <form action="/examples/over-18" method="get" class="form">
+     <div class="form-group">
+          <fieldset>
 
+            <legend class="visuallyhidden">
+              What would you like to do today?
+            </legend>
 
-        <h2 class="heading-medium">
-          What would you like to do today?
-        </h2>
-        <p>Select one of the options below</p>
-
-       <div class="form-group">
-          <fieldset class="inline">
-
-            <legend class="visuallyhidden">Are you 18 or over?</legend>
-
-            <label for="over18True" class="block-label selection-button-radio selected">
-              <input type="radio" name="over18" value="true" id="over18True">
-              Yes
+            <label for="radio-part-2" class="block-label selection-button-radio selected">
+              <input id="radio-part-2" type="radio" name="next-page" value="/existing-sandboxes">
+              <span class="heading-small">I want to work in my existing sandbox</span><br>
+              Go to your sandbox homepage
             </label>
 
-            <label for="over18False" class="block-label selection-button-radio">
-              <input type="radio" name="over18" value="false" id="over18False">
-              No
+            <label for="radio-part-3" class="block-label selection-button-radio">
+              <input id="radio-part-3" type="radio" name="next-page" value="/adv-branch">
+              <span class="heading-small">I want to create a new sandbox</span><br>
+              Configure your new sandbox
             </label>
 
           </fieldset>
