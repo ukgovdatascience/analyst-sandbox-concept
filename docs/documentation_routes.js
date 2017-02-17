@@ -66,7 +66,7 @@ router.get('/existing-sandboxes', function (req, res) {
     res.redirect('/views/adv-branch')
   } else {
     // if over18 is any other value (or is missing) render the page requested
-    res.render('/views/existing-sandboxes')
+    res.render('/existing-sandboxes')
   }
 })
 
