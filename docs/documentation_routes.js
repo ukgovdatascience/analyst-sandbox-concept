@@ -71,6 +71,19 @@ router.get('/app/views/existing-sandboxes', function (req, res) {
   }
 })
 
+router.get('/app/views/adv-user', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var adv = req.query.adv
+  console.log(user);
+  if (user === 'false') {
+    // redirect to the relevant page
+    res.redirect('/app/views/build-sandbox')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.render('/app/views/adv-user')
+  }
+})
+
 module.exports = router
 
 // Strip off markdown extensions if present and redirect
