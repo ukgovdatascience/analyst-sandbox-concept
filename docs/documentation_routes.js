@@ -58,6 +58,18 @@ console.log(over18);
   }
 })
 
+router.get('/app/views/adv-branch', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var user = req.query.user
+  if (user === 'existing') {
+    // redirect to the relevant page
+    res.redirect('/app/views/existing-sandboxes')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.render('/adv-branch')
+  }
+})
+
 module.exports = router
 
 // Strip off markdown extensions if present and redirect
