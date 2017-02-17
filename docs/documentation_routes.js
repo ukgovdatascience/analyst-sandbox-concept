@@ -58,15 +58,15 @@ console.log(over18);
   }
 })
 
-router.get('/views/adv-branch', function (req, res) {
+router.get('/existing-sandboxes', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
   var user = req.query.user
-  if (user === 'existing') {
+  if (user === 'new') {
     // redirect to the relevant page
-    res.redirect('/views/existing-sandboxes')
+    res.redirect('/views/adv-branch')
   } else {
     // if over18 is any other value (or is missing) render the page requested
-    res.render('/views/adv-branch')
+    res.render('/views/existing-sandboxes')
   }
 })
 
