@@ -75,7 +75,7 @@ router.get('/app/views/adv-user', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
   var adv = req.query.adv
   console.log(user);
-  if (user === 'false') {
+  if (adv === 'false') {
     // redirect to the relevant page
     res.redirect('/app/views/build-sandbox')
   } else {
