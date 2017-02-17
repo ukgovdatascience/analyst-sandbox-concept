@@ -61,6 +61,7 @@ console.log(over18);
 router.get('/existing-sandboxes', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
   var user = req.query.user
+  console.log(user);
   if (user === 'new') {
     // redirect to the relevant page
     res.redirect('/adv-branch')
