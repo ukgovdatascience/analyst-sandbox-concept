@@ -58,7 +58,7 @@ console.log(over18);
   }
 })
 
-router.get('/app/views/adv-branch', function (req, res) {
+router.get('/adv-branch', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
   var user = req.query.user
   if (user === 'existing') {
