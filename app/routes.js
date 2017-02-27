@@ -36,7 +36,7 @@ console.log(user);
 router.get('/choose-tools', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
   var adv = req.query.adv
-console.log(user);
+console.log(adv);
   if (adv === 'false') {
     // redirect to the relevant page
     res.redirect('/build-sandbox')
