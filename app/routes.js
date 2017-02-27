@@ -22,9 +22,9 @@ router.get('/examples/template-data', function (req, res) {
 
 router.get('/existing-sandboxes', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
-  var over18 = req.query.over18
-console.log(over18);
-  if (over18 === 'false') {
+  var user = req.query.user
+console.log(user);
+  if (user === 'new') {
     // redirect to the relevant page
     res.redirect('/adv-branch')
   } else {
