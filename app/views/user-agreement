@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sandbox welcome
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://analyst-sandbox-prototype.herokuapp.com/">Analyst sandbox prototype</a></li>
+      <li>Begin</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Step 2 of 7</span>
+          Welcome to the analyst sandbox
+      </h1>
+
+      <form action="/existing-sandboxes" method="get" class="form">
+
+
+        <h2 class="heading-medium">
+          To use the analyst sandbox, please review and agree to this user agreement
+        </h2>
+
+<p>I have read the <a href="https://www.gov.uk/government/publications/data-science-ethical-framework">Data science ethical framework</a> and agree that my work in this sandbox will be in accordance with it.</p>
+<p>I agree to X, Y and Z</p>
+        
+    </div>
+  </div>
+</main>
+{% endblock %}
