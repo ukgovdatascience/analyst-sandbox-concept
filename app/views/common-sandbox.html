@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sandbox welcome
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://analyst-sandbox-prototype.herokuapp.com/">Analyst sandbox prototype</a></li>
+      <li>Begin</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Step 2 of 7</span>
+          Choose or configure your sandbox
+      </h1>
+
+      <form action="/existing-sandboxes" method="get" class="form">
+
+
+        <h2 class="heading-medium">
+          I want to choose a commonly-used sandbox
+        </h2>
+        <p>Select one of the options below</p>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">
+              What would you like to do today?
+            </legend>
+
+            <label for="radio-part-2" class="block-label selection-button-radio">
+              <input id="radio-part-2" type="radio" name="common" value="pypostjup">
+              <span class="heading-small">Python, Postgres, Jupyter</span><br>
+              Go to your sandbox homepage
+            </label>
+
+            <label for="radio-part-3" class="block-label selection-button-radio">
+              <input id="radio-part-3" type="radio" name="common" value="rpostjup">
+              <span class="heading-small">R, Postgres, Jupyter</span><br>
+              Configure your new sandbox
+            </label>
+
+            <label for="radio-part-2" class="block-label selection-button-radio">
+              <input id="radio-part-2" type="radio" name="common" value="rpostbeak">
+              <span class="heading-small">R, Postgres, Beaker</span><br>
+              Go to your sandbox homepage
+            </label>
+
+          </fieldset>
+        </div>
+
+        <h2 class="heading-large">
+        I want to build a custom sandbox
+        </h2>
+
+        <div class="grid-row">
+         <div class="column-third">
+         <h3 class="heading-medium">Language</h3>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Which data science tools would you like to use?</legend>
+
+            <label for="nationality_british" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+              R
+            </label>
+
+            <label for="nationality_irish" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Python
+            </label>
+
+            <label for="nationality_irish" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Julia
+            </label>
+
+              <label for="nationality_irish" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Other
+            </label>
+
+          </fieldset>
+          </div>
+        </div>
+        <div class="column-third">
+        <h3 class="heading-medium">Databases</h3>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Databases</legend>
+
+            <label for="nationality_british" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+              Postgres
+            </label>
+
+            <label for="nationality_irish" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              MongoDB
+            </label>
+
+              <label for="nationality_irish" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Other
+            </label>
+
+          </fieldset>
+        </div>
+</div>
+         <div class="column-third">
+         <h3 class="heading-medium">Environment</h3>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">IDEs</legend>
+
+            <label for="nationality_british" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+              Beaker
+            </label>
+
+            <label for="nationality_irish" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Jupyter
+            </label>
+
+              <label for="nationality_irish" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Other
+            </label>
+
+          </fieldset>
+</div>
+        </div>
+            </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}
