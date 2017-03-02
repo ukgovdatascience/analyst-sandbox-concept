@@ -40,23 +40,37 @@
             <label for="radio-part-2" class="block-label selection-button-radio">
               <input id="radio-part-2" type="radio" name="common" value="pypostjup">
               <span class="heading-small">Python, Postgres, Jupyter</span><br>
-              Python is a programming language, PostgresQL is a dabatabse, Jupyer is a notebook-style programming environment
+              Python is a programming language, PostgresQL is a dabatabse, Jupyter is a notebook-style programming environment
             </label>
 
             <label for="radio-part-3" class="block-label selection-button-radio">
               <input id="radio-part-3" type="radio" name="common" value="rpostjup">
               <span class="heading-small">R, Postgres, Jupyter</span><br>
-              R is a programming language, PostgresQL is a dabatabse, Jupyer is a notebook-style programming environment
+              R is a programming language, PostgresQL is a dabatabse, Jupyter is a notebook-style programming environment
             </label>
 
             <label for="radio-part-2" class="block-label selection-button-radio">
               <input id="radio-part-2" type="radio" name="common" value="rpostbeak">
               <span class="heading-small">R, Postgres, Beaker</span><br>
-              R is a programming language, PostgresQL is a dabatabse, Jupyer is a notebook-style programming environment
+              R is a programming language, PostgresQL is a dabatabse, Jupyter is a notebook-style programming environment
             </label>
 
           </fieldset>
         </div>
+
+        <div class="help-content help-content help-content-open" data-toggle-text="Help me decide" aria-hidden="false" aria-expanded="true">
+        <h2 class="visuallyhidden">Help me decide</h2>
+        <p>These pre-configured sandboxes, with commonly-used software, are ready for you to use. Choose one to see what it can do for you. Once you choose a sandbox, you will be asked what tasks you are looking to complete - you can then add further relevant packages specific to your tasks.</p>
+        <p>You can click below for further help deciding which sandbox is right for you.</p>
+        <a href="#" class="toggle toggle-closed" aria-controls="nationality-provision">I need more help deciding on a sandbox</a><div class="optional-section optional-section" data-toggle-text="I can’t provide my nationality" id="nationality-provision">
+            <label for="nationality_noNationalityReason">
+                Tell us about what you want to do in your sandbox
+            </label>
+            <textarea name="nationality.noNationalityReason" id="nationality_noNationalityReason" class=" small validate" data-validation-name="nationalityExcuse" data-validation-type="field" data-validation-rules="nonEmpty" maxlength="500" autocomplete="off"></textarea>
+            <p>Please provide your email address</p>
+            <input type="email" id="contact_email_detail" name="contact.email.detail" value="" autocomplete="off" class="text  long validate " data-validation-name="emailAddress" data-validation-type="field" data-validation-rules="nonEmpty">
+        </div>
+    </div>
 
         <h2 class="heading-medium">
         I want to build a custom sandbox
