@@ -1,3 +1,27 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sandbox welcome
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://analyst-sandbox-prototype.herokuapp.com/">Analyst sandbox prototype</a></li>
+      <li>Begin</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Step 2 of 7</span>
+          Configure your custom sandbox
+      </h1>
+
 <div class="grid-row">
          <div class="column-third">
          <h3 class="heading-medium">Language</h3>
@@ -22,10 +46,17 @@
               Julia
             </label>
 
-              <label for="nationality_irish" class="block-label selection-button-checkbox">
-              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+            <label for="nationality_other" class="block-label selection-button-checkbox" data-target="example_nationality_other">
+              <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other" aria-controls="example_nationality_other" aria-expanded="false">
               Other
             </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other" aria-hidden="true">
+              <label for="nationality_other_countries" class="form-label">
+                Please specify
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+            </div>
 
           </fieldset>
           </div>
@@ -48,10 +79,17 @@
               MongoDB
             </label>
 
-              <label for="nationality_irish" class="block-label selection-button-checkbox">
-              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+            <label for="nationality_other" class="block-label selection-button-checkbox" data-target="example_nationality_other">
+              <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other" aria-controls="example_nationality_other" aria-expanded="false">
               Other
             </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other" aria-hidden="true">
+              <label for="nationality_other_countries" class="form-label">
+                Please specify
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+            </div>
 
           </fieldset>
         </div>
@@ -74,12 +112,33 @@
               Jupyter
             </label>
 
-              <label for="nationality_irish" class="block-label selection-button-checkbox">
-              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+            <label for="nationality_other" class="block-label selection-button-checkbox" data-target="example_nationality_other">
+              <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other" aria-controls="example_nationality_other" aria-expanded="false">
               Other
             </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other" aria-hidden="true">
+              <label for="nationality_other_countries" class="form-label">
+                Please specify
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+            </div>
 
           </fieldset>
 </div>
         </div>
             </div>
+
+    <div>
+    <label class="form-checkbox" for="checkbox-telephone-number">
+    <input id="checkbox-telephone-number" name="contact-by-text-phone" type="checkbox" value="true">I need help choosing my tools
+    </label>
+  </div>
+
+      <div><a class="button button-start" href="https://analyst-sandbox-prototype.herokuapp.com/recipe-check.html" html" role="button">Check your tools</a></div>
+           
+
+    </div>
+  </div>
+</main>
+{% endblock %}
