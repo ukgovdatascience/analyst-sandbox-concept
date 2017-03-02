@@ -22,35 +22,38 @@
           Welcome to the analyst sandbox
       </h1>
 
-     <div class="form-group">
-          <fieldset>
-
-            <legend class="visuallyhidden">
-              What would you like to do today?
-            </legend>
-
-            <label for="radio-part-2" class="block-label selection-button-radio selected">
-              <input id="radio-part-2" type="radio" name="next-page" value="/existing-sandboxes">
-              <span class="heading-small">I want to work in my existing sandbox</span><br>
-              Go to your sandbox homepage
-            </label>
-
-            <label for="radio-part-3" class="block-label selection-button-radio">
-              <input id="radio-part-3" type="radio" name="next-page" value="/adv-branch">
-              <span class="heading-small">I want to create a new sandbox</span><br>
-              Configure your new sandbox
-            </label>
-
-          </fieldset>
+     <div class="grid-row">
+        <div class="column-third">
+          <h2 class="bold-medium">Impact</h2>
+        <div class="govuk-box-highlight">
+          <h1 class="bold-large">Five case studies</h1>
+          <p>
+            <strong class="heading-medium"><a href="#">See what users have built</strong></a>
+          </p>
         </div>
-
-        <div class="form-group">
-          <input type="submit" class="button" value="Continue">
         </div>
-
-      </form>
+      <div class="column-third">
+        <h2 class="bold-medium">Sandboxes</h2>
+      <div class="govuk-box-highlight">
+        <h1 class="bold-large">Browse 17 sandboxes</h1>
+        <p>
+          <strong class="heading-medium"><a href="#">See what tools others are using</strong></a>
+        </p>
+      </div>
+      </div>
+    <div class="column-third">
+        <h2 class="bold-medium">Users</h2>
+      <div class="govuk-box-highlight">
+        <h1 class="bold-large">11 users, 8 depts</h1>
+        <p>
+          <strong class="heading-medium"><a href="#">See who else is using this service</strong></a>
+        </p>
+      </div>
+      </div>
+    </div>
 
     </div>
+  </div>
   </div>
 </main>
 {% endblock %}
