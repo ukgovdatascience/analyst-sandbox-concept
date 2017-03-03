@@ -46,4 +46,17 @@ console.log(adv);
   }
 })
 
+router.get('/custom-sandbox', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var edit = req.query.edit
+console.log(edit);
+  if (edit === 'task') {
+    // redirect to the relevant page
+    res.redirect('/task-choice')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.render('custom-sandbox')
+  }
+})
+
 module.exports = router;
