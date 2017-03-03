@@ -26,7 +26,7 @@ router.get('/existing-sandboxes', function (req, res) {
 console.log(user);
   if (user === 'new') {
     // redirect to the relevant page
-    res.redirect('/adv-branch')
+    res.redirect('/user-agreement')
   } else {
     // if over18 is any other value (or is missing) render the page requested
     res.render('existing-sandboxes')
