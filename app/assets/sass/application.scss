@@ -38,4 +38,20 @@
   }
 }
 
-// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+// Prototype banner
+
+.prototype {
+    font-weight: 750;
+    position: fixed;
+    left: -50px;
+    top: 35px;
+    background-color: $turquoise;
+    width: 200px;
+    text-align: center; 
+    transform: rotate(-45deg);
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+
+}
