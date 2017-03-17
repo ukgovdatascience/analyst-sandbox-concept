@@ -26,7 +26,7 @@
         </h1>
 
         <p>
-          This page helps you check the tool you've chosen, and suggests other packages you might need, before your sandbox is built
+          This page helps you check the tools you've chosen, and suggests other software you might need, before your sandbox is built
         </p>
 
         <h2 class="heading-large">
@@ -45,26 +45,27 @@
         </ul>
         <div>
           <form action="/" method="post" class="form">
-            <div class="form-group">
-            <fieldset>
+           <div class="form-group">
+          <fieldset>
 
-              <legend class="visuallyhidden">
-              Do you also want to install
-              </legend>
+            <legend class="visuallyhidden">
+              Other tools
+            </legend>
 
-              <label for="Yes" class="block-label selection-button-checkbox">
-              <input id="radio-part-2" type="radio" name="also" value="Yes">
-              <span class="heading-small">Yes</span>
-              </label>
+            <label for="radio-part-2" class="block-label selection-button-radio selected">
+              <input id="radio-part-2" type="radio" name="adv" value="true">
+              <span class="heading-small">Yes</span><br>
+              Continue and choose tools for your sandbox
+            </label>
 
-              <label for="No" class="block-label selection-button-checkbox">
-              <input id="radio-part-3" type="radio" name="also" value="No
-              ">
-              <span class="heading-small">No</span>
-              </label>
+            <label for="radio-part-3" class="block-label selection-button-radio">
+              <input id="radio-part-3" type="radio" name="adv" value="false">
+              <span class="heading-small">No</span><br>
+              Get help with choosing tools for your sandbox
+            </label>
 
-            </fieldset>
-            </div>
+          </fieldset>
+        </div>
         </form>
         </div>
         </p>
