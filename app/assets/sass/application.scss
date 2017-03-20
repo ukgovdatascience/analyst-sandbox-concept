@@ -37,21 +37,3 @@
     list-style-type: none;
   }
 }
-
-// Prototype banner
-
-.prototype {
-    font-weight: 700;
-    position: fixed;
-    left: -50px;
-    top: 35px;
-    background-color: $turquoise;
-    width: 200px;
-    text-align: center; 
-    transform: rotate(-45deg);
-
-    @media screen and (max-width: 1200px) {
-        display: none;
-    }
-
-}
