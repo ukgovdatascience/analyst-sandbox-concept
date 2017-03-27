@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  About your data
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+<div class="phase-banner">
+ <p>
+   <strong class="phase-tag">Prototype</strong>
+   <span>This is a prototype of a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+ </p>
+
+</div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+        <a href="/existing-sandboxes">Back to sandbox homepage</a>
+
+      <form action="/" method="post" class="form">
+
+        <h1 class="heading-xlarge">
+            Upload data using your browser
+        </h1>
+
+        <h2 class="heading-medium">
+          How do you want to upload data?
+        </h2>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">How do you want to upload data?</legend>
+
+            <label for="nationality_british" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+              Read a CSV file
+            </label>
+
+            <label for="nationality_british" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+              Write to a database
+            </label>
+
+            <label for="nationality_irish" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Upload open data
+            </label>
+
+            <label for="nationality_irish" class="block-label selection-button-checkbox">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              Create synthetic data
+            </label>
+
+            <label for="nationality_other" class="block-label selection-button-checkbox" data-target="example_nationality_other">
+              <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other">
+              Other
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other">
+              <label for="nationality_other_countries" class="form-label">
+                Please specify
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+            </div>
+
+          </fieldset>
+        </div>
+
+      </form>
+
+      <div>
+        <p><a class="button button-start" href="https://analyst-sandbox-prototype.herokuapp.com/existing-sandboxes" role="button">Upload data</a></p>
+      </div>
+
+    </div>
+  </div>
+</main>
+{% endblock %}
