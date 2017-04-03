@@ -72,4 +72,23 @@ console.log(del);
   }
 })
 
+router.get('/upload-csv', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var upload = req.query.upload
+console.log(del);
+  if (upload === 'db') {
+    // redirect to the relevant page
+    res.redirect('/write-to-database')
+  if (upload === 'open')
+    // redirect to the relevant page
+    res.redirect('/open-data')
+    if (upload === 'synthetic')
+    // redirect to the relevant page
+    res.redirect('/create-synthetic-data')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.render('upload-csv')
+  }
+})
+
 module.exports = router;
