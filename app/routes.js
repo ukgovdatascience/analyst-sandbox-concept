@@ -79,10 +79,10 @@ console.log(upload);
   if (upload === 'db') {
     // redirect to the relevant page
     res.redirect('/write-to-database')
- } if { (upload === 'open') {
+ } if (upload === 'open') {
     // redirect to the relevant page
     res.redirect('/open-data')
-}  if { (upload === 'synthetic') {
+}  if (upload === 'synthetic') {
     // redirect to the relevant page
     res.redirect('/create-synthetic-data')
   } else {
