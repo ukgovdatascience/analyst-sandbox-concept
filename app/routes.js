@@ -75,7 +75,7 @@ console.log(del);
 router.get('/upload-csv', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
   var upload = req.query.upload
-console.log(del);
+console.log(upload);
   if (upload === 'db') {
     // redirect to the relevant page
     res.redirect('/write-to-database')
