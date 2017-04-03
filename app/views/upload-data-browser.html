@@ -19,7 +19,7 @@
 
         <a href="/existing-sandboxes">Back to sandbox homepage</a>
 
-      <form action="/" method="post" class="form">
+      <form action="/open-data" method="get" class="form">
 
         <h1 class="heading-xlarge">
             Upload data using your browser
@@ -34,25 +34,30 @@
 
             <legend class="visuallyhidden">How do you want to upload data?</legend>
 
-            <label for="nationality_british" class="block-label selection-button-checkbox">
-              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
-              Read a CSV file
+            <label for="radio-part-2" class="block-label selection-button-radio">
+              <input id="radio-part-2" type="radio" name="upload" value="csv">
+              <span class="heading-small">Read a CSV file</span><br>
+              This opens a new window for you select a local file to upload
             </label>
 
-            <label for="nationality_british" class="block-label selection-button-checkbox">
-              <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
-              Write to a database
+            <label for="radio-part-2" class="block-label selection-button-radio">
+              <input id="radio-part-2" type="radio" name="upload" value="db">
+              <span class="heading-small">Write to a database</span><br>
+              This opens a new window that allows you to connect to your database and write to it
             </label>
 
-            <label for="nationality_irish" class="block-label selection-button-checkbox">
-              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
-              Upload open data
+          <label for="radio-part-2" class="block-label selection-button-radio">
+              <input id="radio-part-2" type="radio" name="upload" value="open">
+              <span class="heading-small">Upload open data</span><br>
+              This opens a new window that directs you to sources of open data
             </label>
 
-            <label for="nationality_irish" class="block-label selection-button-checkbox">
-              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
-              Create synthetic data
+          <label for="radio-part-2" class="block-label selection-button-radio">
+              <input id="radio-part-2" type="radio" name="upload" value="synthetic">
+              <span class="heading-small">Create synthetic data</span><br>
+              This opens a new window that helps you create synthetic data
             </label>
+
 
             <label for="nationality_other" class="block-label selection-button-checkbox" data-target="example_nationality_other">
               <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other">
@@ -69,11 +74,11 @@
           </fieldset>
         </div>
 
-      </form>
+      <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
 
-      <div>
-        <p><a class="button button-start" href="https://analyst-sandbox-prototype.herokuapp.com/existing-sandboxes" role="button">Upload data</a></p>
-      </div>
+      </form>
 
     </div>
   </div>
