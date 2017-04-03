@@ -62,7 +62,7 @@ console.log(edit);
 router.get('/delete-sandbox-confirm', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
   var del = req.query.del
-console.log(adv);
+console.log(del);
   if (del === 'vmandrepo') {
     // redirect to the relevant page
     res.redirect('/delete-sandbox-repo-confirm')
