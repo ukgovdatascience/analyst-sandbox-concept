@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Complete sandbox
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+<div class="phase-banner">
+ <p>
+   <strong class="phase-tag">Prototype</strong>
+   <span>This is a prototype of a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+ </p>
+
+</div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <a href="/existing-sandboxes">Back to sandbox homepage</a>
+
+      <div class="govuk-box-highlight">
+        <h1 class="bold-large">Your sandbox and associate repository have been deleted, killing both the virtual machine and configuration files</h1>
+        <p>
+          <strong class="heading-medium"><a href="https://analyst-sandbox-prototype.herokuapp.com/existing-sandboxes" target="_blank">Go to your sandbox homepage</strong></a>
+        </p>
+      </div>
+      <p>The virtual machine running your sandbox has been killed, but you can still access the code repository behind it <a href="#">here</a></p>
+      <p>We have sent you an email confirming this.</p>  
+  </div>
+</main>
+
+{% endblock %}
+
+

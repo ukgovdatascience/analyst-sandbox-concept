@@ -59,4 +59,17 @@ console.log(edit);
   }
 })
 
+router.get('/delete-sandbox-confirm', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var del = req.query.del
+console.log(adv);
+  if (del === 'vmandrepo') {
+    // redirect to the relevant page
+    res.redirect('/delete-sandbox-repo-confirm')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.render('delete-sandbox-confirm')
+  }
+})
+
 module.exports = router;
