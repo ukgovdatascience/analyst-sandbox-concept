@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Create synthetic data
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+<div class="phase-banner">
+ <p>
+   <strong class="phase-tag">Prototype</strong>
+   <span>This is a prototype of a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+ </p>
+
+</div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+        <a href="/existing-sandboxes">Back to sandbox homepage</a>
+
+      <form action="/" method="get" class="form">
+
+        <h1 class="heading-xlarge">
+            Create synthetic data
+        </h1>
+
+
+        <div class="form-group">
+          <fieldset>
+
+        <p>''synthpop'' is an example of a package in R that helps you create synthetic data (others are available). You can read about ''synthpop'' <a href="https://cran.r-project.org/web/packages/synthpop/vignettes/synthpop.pdf">here</a>, and you can add the package directly in your development environment.</p>
+
+        <p>[Python]</p>
+
+          </fieldset>
+        </div>
+
+      <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

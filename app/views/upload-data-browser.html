@@ -38,42 +38,56 @@
 
             <legend class="visuallyhidden">How do you want to upload data?</legend>
 
-            <label for="radio-part-2" class="block-label selection-button-radio">
-              <input id="radio-part-2" type="radio" name="upload" value="csv">
-              <span class="heading-small">Upload a CSV file</span><br>
+            <div class="multiple-choice">
+              <input id="radio-home-address" type="radio" name="upload" value="csv">
+              <label for="radio-home-address"><span class="heading-small">Upload a CSV file</span><br>
               This opens a new window for you select a local file to upload
-            </label>
-
-            <label for="radio-part-2" class="block-label selection-button-radio">
-              <input id="radio-part-2" type="radio" name="upload" value="db">
-              <span class="heading-small">Write to a database</span><br>
-              This opens a new window that allows you to connect to your database and write to it
-            </label>
-
-          <label for="radio-part-2" class="block-label selection-button-radio">
-              <input id="radio-part-2" type="radio" name="upload" value="open">
-              <span class="heading-small">Upload open data</span><br>
-              This opens a new window that directs you to sources of open data
-            </label>
-
-          <label for="radio-part-2" class="block-label selection-button-radio">
-              <input id="radio-part-2" type="radio" name="upload" value="synthetic">
-              <span class="heading-small">Create synthetic data</span><br>
-              This opens a new window that helps you create synthetic data
-            </label>
-
-
-            <label for="nationality_other" class="block-label selection-button-checkbox" data-target="example_nationality_other">
-              <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other">
-              Other
-            </label>
-
-            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other">
-              <label for="nationality_other_countries" class="form-label">
-                Please specify
               </label>
-              <input class="form-control" type="text" id="nationality_other_countries">
             </div>
+
+            <div class="multiple-choice">
+              <input id="radio-home-address" type="radio" name="upload" value="db">
+              <label for="radio-home-address"><span class="heading-small">Write to a database</span><br>
+              This opens a new window that allows you to connect to your database and write to it</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-home-address" type="radio" name="upload" value="open">
+              <label for="radio-home-address"><span class="heading-small">Upload open data</span><br>
+              This opens a new window that directs you to sources of open data</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-home-address" type="radio" name="upload" value="synthetic">
+              <label for="radio-home-address"><span class="heading-small">Create synthetic data</span><br>
+              This opens a new window that helps you create synthetic data</label>
+            </div>
+
+            <div class="multiple-choice" data-target="example-other-address">
+              <input id="radio-other-address" type="radio" name="radio-indent-group" value="Other" aria-controls="example-other-address" aria-expanded="true">
+              <label for="radio-other-address">Other methods</label>
+            </div>  
+
+            <div class="panel panel-border-narrow" id="example-other-address" aria-hidden="false">
+
+              <h2 class="heading-medium">
+                Your other address
+              </h2>
+
+              <fieldset>
+
+                <legend class="visually-hidden">
+                  Your other address
+                </legend>
+
+                <div class="form-group form-group-compound">
+                  <label class="form-label" for="address-line-1">Please specify</label>
+                  <input class="form-control" type="text" id="address-line-1">
+                </div>
+
+              </fieldset>
+
+            </div>           
 
           </fieldset>
         </div>

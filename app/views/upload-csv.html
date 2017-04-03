@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Upload CSV
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+<div class="phase-banner">
+ <p>
+   <strong class="phase-tag">Prototype</strong>
+   <span>This is a prototype of a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+ </p>
+
+</div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+        <a href="/existing-sandboxes">Back to sandbox homepage</a>
+
+      <form action="/" method="get" class="form">
+
+        <h1 class="heading-xlarge">
+            Upload CSV
+        </h1>
+
+
+        <div class="form-group">
+          <fieldset>
+
+        <<a href="#">Open Finder/Explorer window</a>    
+
+          </fieldset>
+        </div>
+
+      <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}
