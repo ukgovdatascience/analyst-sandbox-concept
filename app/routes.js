@@ -86,7 +86,7 @@ console.log(upload);
     // redirect to the relevant page
     res.redirect('/create-synthetic-data')
       // redirect to the relevant page
-  } if (upload === 'csv') {
+  } else {
     res.render('/upload-csv')
   }
 })
