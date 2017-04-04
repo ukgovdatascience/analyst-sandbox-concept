@@ -85,9 +85,9 @@ console.log(upload);
 }  if (upload === 'synthetic') {
     // redirect to the relevant page
     res.redirect('/create-synthetic-data')
-  } else {
-    // if over18 is any other value (or is missing) render the page requested
-    res.render('upload-csv')
+      // redirect to the relevant page
+  } if (upload === 'csv') {
+    res.redirect('/upload-csv')
   }
 })
 
