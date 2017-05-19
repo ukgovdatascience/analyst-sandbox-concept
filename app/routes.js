@@ -20,7 +20,7 @@ router.get('/examples/template-data', function (req, res) {
 
 // Branching
 
-router.get('/existing-sandboxes', function (req, res) {
+router.get('/sandbox-homepage', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
   var user = req.query.user
 console.log(user);
@@ -29,7 +29,7 @@ console.log(user);
     res.redirect('/user-agreement')
   } else {
     // if over18 is any other value (or is missing) render the page requested
-    res.render('existing-sandboxes')
+    res.render('sandbox-homepage')
   }
 })
 
