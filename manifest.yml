@@ -1,0 +1,6 @@
+---
+applications:
+- name: ds-sandbox
+  command: node server.js
+  memory: 256M
+  buildpack: nodejs_buildpack
